@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+    </header>
+
+    <main class='corpo'>
+        <!-- <button type="button" class="marca">HP<br></button> -->
+        <img src='casio-removebg-preview.png' style="width: 50% ;">
+        <p id='visor'></p>
+        <table>
+            <tr>
+                <td><button type="button" class="btn-clear">C</button></td>
+                <td><button type="button" onclick="del()">=></button></td>
+                <td><button type="button" onclick="insert('%')">%</button></td>
+                <td><button type="button" onclick="insert('/')">÷</button></td>
+              </tr>
+            <tr>
+                <td><button type="button" onclick="insert('7')">7</button></td>
+                <td><button type="button" onclick="insert('8')">8</button></td>
+                <td><button type="button" onclick="insert('9')">9</button></td>
+                <td><button type="button" onclick="insert('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="insert('4')">4</button></td>
+                <td><button type="button" onclick="insert('5')">5</button></td>
+                <td><button type="button" onclick="insert('6')">6</button></td>
+                <td><button type="button" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="insert('1')">1</button></td>
+                <td><button type="button" onclick="insert('2')">2</button></td>
+                <td><button type="button" onclick="insert('3')">3</button></td>
+                <td><button type="button" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="insert('0')">0</button></td>
+                <td>                                </td>
+                <td><button type="button" onclick="insert('.')">,</button></td>
+                <td><button type="button" onclick="calcular()">=</button></td>
+            </tr>
+          </table>
+    </main>
+
+    <script type='text/javascript' src='javascript.js'></script> 
+
+    <footer>
+    </footer>
+</body>
+</html>
