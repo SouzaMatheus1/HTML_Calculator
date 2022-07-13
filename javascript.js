@@ -3,10 +3,8 @@ function insert(num){
     document.getElementById("visor").innerHTML = valor + num;
 }
 
-function clear(){
-   
+function clear(){  
     document.getElementById('visor').innerText = "";
-
 }
 
 function del(){
@@ -18,7 +16,7 @@ function del(){
 function calculate(){
     var resultado = document.getElementById('visor').innerHTML;
     if(resultado){
-
+        document.getElementById('visor').innerHTML = eval(resultado);
     }
 }
 
